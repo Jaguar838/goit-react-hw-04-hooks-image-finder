@@ -73,9 +73,15 @@
     outline: none;
     padding-left: 4px;
     padding-right: 4px;
-}
 
-.SearchForm_input::placeholder {
-    font: inherit;
-    font-size: 18px;
+    &::placeholder {
+        font: inherit;
+        font-size: 18px;
+        transition: all 0.2s linear;
+        color: rgb(97, 95, 95);
+    }
+
+    &:focus::placeholder {
+        text-indent: 100%;
+    }
 }
