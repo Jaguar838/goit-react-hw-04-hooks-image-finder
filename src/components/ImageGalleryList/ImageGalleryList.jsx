@@ -23,7 +23,6 @@ const ImageGalleryItem = ({
 };
 
 const ImageGalleryList = ({ images, modalImage }) => {
-    console.log(modalImage);
     return (
         <ul className={css.ImageGalleryList}>
             {images?.map(({ id, webformatURL, tags, largeImageURL }) => (

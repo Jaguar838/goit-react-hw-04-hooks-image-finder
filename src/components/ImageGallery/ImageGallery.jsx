@@ -4,10 +4,9 @@ import fetchImg from 'utils/apiService';
 import { Spinner } from 'UI/Spinner';
 import { Button } from 'UI/Button';
 import { Modal } from 'UI/Modal';
-// import { toast } from 'react-toastify';
+
 import css from './ImageGallery.module.scss';
 
-// import PropTypes from 'prop-types';
 export class ImageGallery extends Component {
     state = {
         images: [],
@@ -68,14 +67,8 @@ export class ImageGallery extends Component {
     };
 
     render() {
-        const {
-            showModal,
-            images,
-            error,
-            isLoading,
-            largeImageURL,
-            // showButton,
-        } = this.state;
+        const { showModal, images, error, isLoading, largeImageURL } =
+            this.state;
         const showButton = images.length > 0;
         return (
             <>
@@ -102,16 +95,3 @@ export class ImageGallery extends Component {
         );
     }
 }
-
-// const {
-//     images,
-//     isLoading,
-//     showModal,
-//     largeImageURL,
-//     error,
-//     showButton,
-// } = this.state;
-
-// if (this.state.images.length > 0) {
-//     this.setState({ showButton: true });
-// }
