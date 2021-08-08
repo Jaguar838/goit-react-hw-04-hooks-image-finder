@@ -10,7 +10,7 @@ axios.defaults.params = {
 
 const fetchImg = async ({ query = '', currentPage = 1 }) => {
     const { data } = await axios.get('', {
-        params: { q: query, currentPage },
+        params: { q: query, page: currentPage },
     });
     return data.hits;
 };
