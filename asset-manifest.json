@@ -1,23 +1,21 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-04-hooks-phonebook/static/css/main.429a9c8d.chunk.css",
-    "main.js": "/goit-react-hw-04-hooks-phonebook/static/js/main.abba3df3.chunk.js",
-    "main.js.map": "/goit-react-hw-04-hooks-phonebook/static/js/main.abba3df3.chunk.js.map",
-    "runtime-main.js": "/goit-react-hw-04-hooks-phonebook/static/js/runtime-main.ab2eda13.js",
-    "runtime-main.js.map": "/goit-react-hw-04-hooks-phonebook/static/js/runtime-main.ab2eda13.js.map",
-    "static/js/2.55bfedbb.chunk.js": "/goit-react-hw-04-hooks-phonebook/static/js/2.55bfedbb.chunk.js",
-    "static/js/2.55bfedbb.chunk.js.map": "/goit-react-hw-04-hooks-phonebook/static/js/2.55bfedbb.chunk.js.map",
-    "index.html": "/goit-react-hw-04-hooks-phonebook/index.html",
-    "precache-manifest.1475ab6a6c404b18ab1b9ac6bb943e81.js": "/goit-react-hw-04-hooks-phonebook/precache-manifest.1475ab6a6c404b18ab1b9ac6bb943e81.js",
-    "service-worker.js": "/goit-react-hw-04-hooks-phonebook/service-worker.js",
-    "static/css/main.429a9c8d.chunk.css.map": "/goit-react-hw-04-hooks-phonebook/static/css/main.429a9c8d.chunk.css.map",
-    "static/js/2.55bfedbb.chunk.js.LICENSE.txt": "/goit-react-hw-04-hooks-phonebook/static/js/2.55bfedbb.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/goit-react-hw-04-hooks-phonebook/static/media/montserrat-v15-latin_cyrillic-regular.b3e1c2f0.woff"
+    "main.css": "/goit-react-hw-04-hooks-image-finder/static/css/main.ecc5324d.chunk.css",
+    "main.js": "/goit-react-hw-04-hooks-image-finder/static/js/main.ebf296e4.chunk.js",
+    "main.js.map": "/goit-react-hw-04-hooks-image-finder/static/js/main.ebf296e4.chunk.js.map",
+    "runtime-main.js": "/goit-react-hw-04-hooks-image-finder/static/js/runtime-main.5045d3db.js",
+    "runtime-main.js.map": "/goit-react-hw-04-hooks-image-finder/static/js/runtime-main.5045d3db.js.map",
+    "static/js/2.336ef68d.chunk.js": "/goit-react-hw-04-hooks-image-finder/static/js/2.336ef68d.chunk.js",
+    "static/js/2.336ef68d.chunk.js.map": "/goit-react-hw-04-hooks-image-finder/static/js/2.336ef68d.chunk.js.map",
+    "index.html": "/goit-react-hw-04-hooks-image-finder/index.html",
+    "static/css/main.ecc5324d.chunk.css.map": "/goit-react-hw-04-hooks-image-finder/static/css/main.ecc5324d.chunk.css.map",
+    "static/js/2.336ef68d.chunk.js.LICENSE.txt": "/goit-react-hw-04-hooks-image-finder/static/js/2.336ef68d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/goit-react-hw-04-hooks-image-finder/static/media/montserrat-v15-latin_cyrillic-regular.f263cfd0.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.ab2eda13.js",
-    "static/js/2.55bfedbb.chunk.js",
-    "static/css/main.429a9c8d.chunk.css",
-    "static/js/main.abba3df3.chunk.js"
+    "static/js/runtime-main.5045d3db.js",
+    "static/js/2.336ef68d.chunk.js",
+    "static/css/main.ecc5324d.chunk.css",
+    "static/js/main.ebf296e4.chunk.js"
   ]
 }
