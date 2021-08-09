@@ -41,7 +41,7 @@ const ImageGalleryList = ({ images, onToggleModal }) => {
 
 ImageGalleryList.propTypes = {
     images: PropTypes.array.isRequired,
-    onToggleModa: PropTypes.func.isRequired,
+    onToggleModal: PropTypes.func.isRequired,
 };
 
 export default ImageGalleryList;

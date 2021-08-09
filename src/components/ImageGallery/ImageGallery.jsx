@@ -78,7 +78,7 @@ export function ImageGallery({ query }) {
             )}
 
             {showModal && (
-                <Modal onCloseModal={toggleModal}>
+                <Modal onCloseModal={toggleModal()}>
                     <img src={largeImageURL} alt="" />
                 </Modal>
             )}
