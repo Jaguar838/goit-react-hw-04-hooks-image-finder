@@ -3,7 +3,7 @@ import ImageGalleryList from '../ImageGalleryList';
 import fetchImg from 'utils/apiService';
 import { Spinner } from 'UI/Spinner';
 import { Button } from 'UI/Button';
-import { Modal } from 'UI/Modal';
+import Modal from 'UI/Modal';
 
 import css from './ImageGallery.module.scss';
 
@@ -77,7 +77,7 @@ export class ImageGallery extends Component {
                 {error && <p className={css.Error}>{error}</p>}
                 <ImageGalleryList
                     images={images}
-                    modalImage={this.handleModalImage}
+                    onToggleModal={this.handleModalImage}
                 />
                 {showButton && (
                     <Button

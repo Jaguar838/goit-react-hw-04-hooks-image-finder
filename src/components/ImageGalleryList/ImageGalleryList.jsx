@@ -7,7 +7,7 @@ const ImageGalleryItem = ({
     webformatURL,
     tags,
     largeImageURL,
-    modalImage,
+    onToggleModal,
 }) => {
     return (
         <li className={css.ImageGalleryItem}>
@@ -16,13 +16,14 @@ const ImageGalleryItem = ({
                 src={webformatURL}
                 alt={tags}
                 data-source={largeImageURL}
-                onClick={() => modalImage(largeImageURL)}
+                onClick={() => onToggleModal(largeImageURL)}
             />
         </li>
     );
 };
 
-const ImageGalleryList = ({ images, modalImage }) => {
+const ImageGalleryList = ({ images, onToggleModal }) => {
+    console.log('onToggleModa', onToggleModal);
     return (
         <ul className={css.ImageGalleryList}>
             {images?.map(({ id, webformatURL, tags, largeImageURL }) => (
@@ -31,7 +32,7 @@ const ImageGalleryList = ({ images, modalImage }) => {
                     webformatURL={webformatURL}
                     tags={tags}
                     largeImageURL={largeImageURL}
-                    onClickImg={modalImage}
+                    onClickImg={onToggleModal}
                 />
             ))}
         </ul>
@@ -40,7 +41,7 @@ const ImageGalleryList = ({ images, modalImage }) => {
 
 ImageGalleryList.propTypes = {
     images: PropTypes.array.isRequired,
-    modalImage: PropTypes.func.isRequired,
+    onToggleModa: PropTypes.func.isRequired,
 };
 
 export default ImageGalleryList;
