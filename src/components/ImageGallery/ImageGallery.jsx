@@ -63,7 +63,6 @@ export function ImageGallery({ query }) {
         setLargeImageURL(url);
     };
 
-    // const { showModal, images, error, isLoading, largeImageURL } =this.state;
     const showButton = images.length === 12;
     return (
         <>
