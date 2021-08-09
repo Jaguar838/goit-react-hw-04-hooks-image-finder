@@ -34,7 +34,6 @@ export class ImageGallery extends Component {
     }
 
     fetchImages = () => {
-        console.log('fetchImages');
         const { currentPage } = this.state;
         console.log(currentPage, 'currentPage');
         const { query } = this.props;
