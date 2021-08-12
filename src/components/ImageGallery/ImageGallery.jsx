@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ImageGalleryList from '../ImageGalleryList';
 import fetchImg from 'utils/apiService';
+import scroll from 'utils/scroll';
 import { Spinner } from 'UI/Spinner';
 import { Button } from 'UI/Button';
 import Modal from 'UI/Modal';
@@ -20,14 +21,8 @@ export function ImageGallery({ query }) {
         if (query) {
             updateStates();
             fetchImages();
+            scroll();
         }
-    });
-
-    useEffect(() => {
-        window.scrollTo({
-            top: document.documentElement.scrollHeight,
-            behavior: 'smooth',
-        });
     });
 
     const updateStates = () => {
