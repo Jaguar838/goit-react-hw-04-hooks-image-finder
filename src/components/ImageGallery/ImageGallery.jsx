@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import ImageGalleryList from '../ImageGalleryList';
 import fetchImg from 'utils/apiService';
-import scroll from 'utils/scroll';
+import { scroll } from 'utils/scroll';
 import { Spinner } from 'UI/Spinner';
 import { Button } from 'UI/Button';
+// import toast, { Toaster } from 'react-hot-toast';
 import Modal from 'UI/Modal';
 
 import css from './ImageGallery.module.scss';
