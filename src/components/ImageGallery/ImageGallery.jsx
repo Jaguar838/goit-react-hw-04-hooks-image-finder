@@ -58,7 +58,7 @@ export function ImageGallery({ query }) {
         setLargeImageURL(url);
     };
 
-    const showButton = images.length === 12;
+    const showButton = !(images.length % 12) && images.length > 0;
     return (
         <>
             {isLoading && <Spinner />}
