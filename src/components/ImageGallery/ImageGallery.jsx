@@ -12,9 +12,9 @@ import css from './ImageGallery.module.scss';
 export function ImageGallery({ query }) {
     const [images, setImages] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-    const [showModal, setShowModal] = useState(false);
+    const [isModal, setModal] = useState(false);
     const [largeImageURL, setLargeImageURL] = useState(null);
     // showButton: false,
 
@@ -38,7 +38,7 @@ export function ImageGallery({ query }) {
             currentPage,
         };
 
-        setIsLoading(true);
+        setLoading(true);
 
         fetchImg(options)
             .then(
@@ -46,11 +46,11 @@ export function ImageGallery({ query }) {
                 setCurrentPage(prevState => prevState + 1),
             )
             .catch(err => setError(err))
-            .finally(() => setIsLoading(false));
+            .finally(() => setLoading(false));
     };
 
     const toggleModal = () => {
-        setShowModal(prevState => !prevState);
+        setModal(prevState => !prevState);
         setLargeImageURL(null);
     };
 
@@ -59,7 +59,7 @@ export function ImageGallery({ query }) {
         setLargeImageURL(url);
     };
 
-    const showButton = !(images.length % 12) && images.length > 0;
+    const isButton = !(images.length % 12) && images.length > 0;
     return (
         <>
             {isLoading && <Spinner />}
@@ -69,11 +69,11 @@ export function ImageGallery({ query }) {
                 images={images}
                 onToggleModal={handleModalImage}
             />
-            {showButton && (
+            {isButton && (
                 <Button onClick={fetchImages} isLoading={isLoading}></Button>
             )}
 
-            {showModal && (
+            {isModal && (
                 <Modal onCloseModal={toggleModal()}>
                     <img src={largeImageURL} alt="" />
                 </Modal>
