@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { v4 as uuidv4 } from 'uuid';
 import css from './ImageGalleryList.module.scss';
 
 const ImageGalleryItem = ({
@@ -29,7 +29,7 @@ const ImageGalleryList = ({ images, modalImage }) => {
                 const openModalImage = () => modalImage(largeImageURL);
                 return (
                     <ImageGalleryItem
-                        key={id}
+                        key={uuidv4()} // bagfix pixabay clone id
                         webformatURL={webformatURL}
                         tags={tags}
                         largeImageURL={largeImageURL}

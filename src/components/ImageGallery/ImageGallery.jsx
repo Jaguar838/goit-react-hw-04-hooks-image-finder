@@ -63,8 +63,7 @@ export function ImageGallery({ query }) {
     return (
         <>
             {isLoading && <Spinner />}
-            {error && <h2>{error}</h2>}
-            {error && <p className={css.Error}>{error}</p>}
+            {error && <h2 className={css.Error}>{error}</h2>}
             <ImageGalleryList
                 images={images}
                 onToggleModal={handleModalImage}
