@@ -12,6 +12,7 @@ export default function App() {
     };
     return (
         <Layout>
+            {console.log(query)}
             <Searchbar onSubmit={handleSubmitSearchbar} />
             <ImageGallery query={query} />
         </Layout>
