@@ -64,10 +64,7 @@ export function ImageGallery({ query }) {
         <>
             {isLoading && <Spinner />}
             {error && <h2 className={css.Error}>{error}</h2>}
-            <ImageGalleryList
-                images={images}
-                onToggleModal={handleModalImage}
-            />
+            <ImageGalleryList images={images} modalImage={handleModalImage} />
             {isButton && (
                 <Button onClick={fetchImages} isLoading={isLoading}></Button>
             )}

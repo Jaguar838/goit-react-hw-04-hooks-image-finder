@@ -1,5 +1,5 @@
 import React from 'react';
-
+import css from 'ImageGalleryItem.module.css';
 const ImageGalleryItem = ({
     webformatURL,
     tags,
@@ -18,3 +18,4 @@ const ImageGalleryItem = ({
         </li>
     );
 };
+export default ImageGalleryItem;
