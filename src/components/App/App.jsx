@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { Layout } from 'UI/Layout';
-import { Searchbar } from 'components/Searchbar';
+import { SearchBar } from 'components/SearchBar';
 import { ImageGallery } from 'components/ImageGallery';
 
 export default function App() {
@@ -12,7 +12,7 @@ export default function App() {
     };
     return (
         <Layout>
-            <Searchbar onSubmit={handleSubmitSearchbar} />
+            <SearchBar onSubmit={handleSubmitSearchbar} />
             <ImageGallery query={query} />
         </Layout>
     );

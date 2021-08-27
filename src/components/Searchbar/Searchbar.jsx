@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-import css from './Searchbar.module.scss';
+import css from './SearchBar.module.scss';
 import toast, { Toaster } from 'react-hot-toast';
 
-export const Searchbar = ({ onSubmit }) => {
+export const SearchBar = ({ onSubmit }) => {
     const [searchQuery, setSearchQuery] = useState('');
     // const handleChangeSearch = event => setQuery(event.target.value);
 
