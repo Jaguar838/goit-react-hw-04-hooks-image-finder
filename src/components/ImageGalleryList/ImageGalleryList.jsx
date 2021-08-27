@@ -7,7 +7,7 @@ import css from './ImageGalleryList.module.scss';
 const ImageGalleryList = ({ images, modalImage }) => {
     return (
         <ul className={css.ImageGalleryList}>
-            {images?.map(({ id, webformatURL, tags, largeImageURL }) => {
+            {images?.map(({ webformatURL, tags, largeImageURL }) => {
                 return (
                     <ImageGalleryItem
                         key={uuidv4()}

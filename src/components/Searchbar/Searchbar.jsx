@@ -5,7 +5,6 @@ import toast, { Toaster } from 'react-hot-toast';
 
 export const SearchBar = ({ onSubmit }) => {
     const [searchQuery, setSearchQuery] = useState('');
-    // const handleChangeSearch = event => setQuery(event.target.value);
 
     const handleSubmit = event => {
         event.preventDefault();
