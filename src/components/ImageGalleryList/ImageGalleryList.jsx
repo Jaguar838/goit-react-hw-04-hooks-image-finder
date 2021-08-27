@@ -1,27 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
-
+import ImageGalleryItem from '../ImageGalleryItem';
 import css from './ImageGalleryList.module.scss';
-
-const ImageGalleryItem = ({
-    webformatURL,
-    tags,
-    largeImageURL,
-    modalImage,
-}) => {
-    return (
-        <li className={css.ImageGalleryItem}>
-            <img
-                className={css.ImageGalleryItem_image}
-                src={webformatURL}
-                alt={tags}
-                data-url={largeImageURL}
-                onClick={() => modalImage(largeImageURL)}
-            />
-        </li>
-    );
-};
 
 const ImageGalleryList = ({ images, modalImage }) => {
     return (

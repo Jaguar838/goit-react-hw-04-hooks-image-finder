@@ -1,5 +1,5 @@
 import React from 'react';
-import css from 'ImageGalleryItem.module.css';
+import css from './ImageGalleryItem.module.scss';
 const ImageGalleryItem = ({
     webformatURL,
     tags,

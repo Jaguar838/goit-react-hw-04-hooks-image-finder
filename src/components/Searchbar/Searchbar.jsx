@@ -4,25 +4,23 @@ import css from './Searchbar.module.scss';
 import toast, { Toaster } from 'react-hot-toast';
 
 export const Searchbar = ({ onSubmit }) => {
-    const [query, setQuery] = useState('');
+    const [searchQuery, setSearchQuery] = useState('');
+    // const handleChangeSearch = event => setQuery(event.target.value);
 
-    const handleChangeSearch = event => setQuery(event.target.value);
-
-    const handleSubmit = evt => {
-        evt.preventDefault();
-        const { value } = evt.target;
-        if (query.trim() === '') {
+    const handleSubmit = event => {
+        event.preventDefault();
+        if (searchQuery.trim() === '') {
             toast.error('Введите поисковый запрос', {
                 position: 'top-center',
             });
             return;
         }
-        onSubmit(value);
+        onSubmit(searchQuery);
         resetSearch();
     };
 
     const resetSearch = () => {
-        setQuery('');
+        setSearchQuery('');
     };
 
     return (
@@ -35,8 +33,8 @@ export const Searchbar = ({ onSubmit }) => {
                     className={css.SearchForm_input}
                     type="text"
                     placeholder="Search images and photos"
-                    onChange={handleChangeSearch}
-                    value={query}
+                    onChange={event => setSearchQuery(event.target.value)}
+                    value={searchQuery}
                 />
             </form>
             <Toaster />
